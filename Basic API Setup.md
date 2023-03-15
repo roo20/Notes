@@ -2,7 +2,7 @@
 
 ### info
 
-- be always consistent with naming and use verbs ie:
+- always be consistent with naming and use verbs ie:
   ```coffeescript
   GET     /api/{apiVersion}/Books
   GET     /api/{apiVersion}/Books/{BookId}

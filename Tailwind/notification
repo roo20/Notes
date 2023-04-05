@@ -1,0 +1,19 @@
+<!-- start: Social Network notification:light -->
+<div class="relative h-auto w-full">
+  <div class="mx-auto my-5 max-w-sm transform rounded-lg bg-white px-5 py-3.5 shadow transition duration-100 ease-linear hover:shadow-md">
+    <div class="flex w-full items-center justify-between">
+      <span class="text-sm font-medium text-slate-400">New Notification</span>
+      <button class="-mr-1 flex h-5 w-5 items-center justify-center rounded-full bg-slate-100 text-slate-400 hover:bg-slate-200 hover:text-slate-600">
+        <svg class="h-2 w-2 items-center fill-current" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" /></svg>
+      </button>
+    </div>
+    <div class="mt-2 flex cursor-pointer items-center rounded-lg px-1 py-1">
+      <div class="ml-3">
+        <span class="text-xs leading-none opacity-50">reacted to your comment:</span>
+        <p class="pt-2 text-xs italic leading-4 opacity-70"></p>
+        <span class="text-[10px] font-medium leading-4 text-blue-500 opacity-75">a few seconds ago</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end: Social Network notification:light -->

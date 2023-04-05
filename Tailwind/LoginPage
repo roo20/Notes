@@ -1,0 +1,45 @@
+<div class="flex justify-center bg-indigo-100">
+  <div
+    class="m-16 flex h-1/6 w-96 flex-col items-center justify-center rounded-2xl bg-white px-12 py-16"
+  >
+    <!-- User profile image -->
+    <img
+      class="h-32 w-32 rounded-full"
+      src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+      alt="user avatar"
+    />
+    <form method="post" class="mb-4 mt-8">
+      <div class="mb-4">
+        <label for="userEmail" class="sr-only">Email address</label>
+        <input
+          class="rounded border border-solid border-indigo-200 bg-slate-50 px-2 py-3 hover:border-indigo-400 focus:bg-white focus:outline-indigo-500"
+          type="email"
+          id="userEmail"
+          placeholder="Email address"
+          required
+        />
+      </div>
+      <div>
+        <label for="userEmail" class="sr-only">Password</label>
+        <input
+          class="rounded border border-solid border-indigo-200 bg-slate-50 px-2 py-3 hover:border-indigo-400 focus:bg-white focus:outline-indigo-500"
+          type="password"
+          id="userPass"
+          placeholder="Password"
+          required
+        />
+      </div>
+      <div class="my-4 flex items-center">
+        <input class="mr-2 h-4 w-4" type="checkbox" id="userRemember" />
+        <label for="userRemember">Remember me</label>
+      </div>
+      <button
+        class="w-full bg-indigo-700 py-3 font-bold text-white hover:bg-indigo-600"
+        type="submit"
+      >
+        Sign in
+      </button>
+    </form>
+    <a href="#" class="self-start">Forgot the password?</a>
+  </div>
+</div>

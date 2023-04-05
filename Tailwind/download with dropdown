@@ -1,0 +1,60 @@
+<div class="flex h-screen justify-center">
+  <div class="my-32 flex items-center">
+    <button
+      class="rounded bg-indigo-800 px-4 py-2 font-medium capitalize tracking-wide text-white hover:bg-indigo-700 focus:bg-indigo-700 focus:outline-none"
+    >
+      Download
+    </button>
+
+    <span class="border"></span>
+
+    <div x-data="{ dropdownOpen: true }" class="relative">
+      <button
+        @click="dropdownOpen = !dropdownOpen"
+        class="relative z-10 block rounded bg-indigo-800 p-2 hover:bg-indigo-700 focus:bg-indigo-700 focus:outline-none"
+      >
+        <svg
+          class="h-6 w-6 text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+          />
+        </svg>
+      </button>
+
+      <div
+        x-show="dropdownOpen"
+        @click="dropdownOpen = false"
+        class="fixed inset-0 z-10 h-full w-full"
+      ></div>
+
+      <div
+        x-show="dropdownOpen"
+        class="absolute right-0 z-20 mt-2 w-48 overflow-hidden rounded-md bg-white shadow-xl"
+      >
+        <a
+          href="#"
+          class="block border-b px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
+          >small <span class="text-indigo-600">(640x426)</span></a
+        >
+        <a
+          href="#"
+          class="block border-b px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
+          >medium <span class="text-indigo-600">(1920x1280)</span></a
+        >
+        <a
+          href="#"
+          class="block border-b px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
+          >large <span class="text-indigo-600">(2400x1600)</span></a
+        >
+      </div>
+    </div>
+  </div>
+</div>
